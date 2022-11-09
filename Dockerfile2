@@ -1,0 +1,9 @@
+FROM openjdk
+
+WORKDIR /application
+
+COPY mostafa.java .
+
+RUN javac mostaf.java
+
+CMD ["java" , "mostafa"]
